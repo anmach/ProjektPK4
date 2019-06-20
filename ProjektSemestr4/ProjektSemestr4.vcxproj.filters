@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Zwierzaki">
+      <UniqueIdentifier>{5d96d177-c8e2-4d3f-8234-11a7ca5f374f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Zwierzaki">
+      <UniqueIdentifier>{47776f6c-1f14-42b5-8f58-2bb9078e59c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Miejsca">
+      <UniqueIdentifier>{269abb6f-81bd-4d12-a6b2-99dbc8fcd2f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Surowce">
+      <UniqueIdentifier>{87ee8403-250b-49bd-830b-9a749f361e9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Miejsca">
+      <UniqueIdentifier>{d2d770e9-8502-41c9-844c-c1ca567a79ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\Surowce">
+      <UniqueIdentifier>{88c42b88-0c8f-484c-9f81-64695dd7afff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Dragon.h">
+      <Filter>Pliki nagłówkowe\Zwierzaki</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonScaleForge.h">
+      <Filter>Pliki nagłówkowe\Miejsca</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonScale.h">
+      <Filter>Pliki nagłówkowe\Surowce</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoenixFeather.h">
+      <Filter>Pliki nagłówkowe\Surowce</Filter>
+    </ClInclude>
+    <ClInclude Include="Phoenix.h">
+      <Filter>Pliki nagłówkowe\Zwierzaki</Filter>
+    </ClInclude>
+    <ClInclude Include="Peryton.h">
+      <Filter>Pliki nagłówkowe\Zwierzaki</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Bar.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="All_things.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopB.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="PerytonFeather.h">
+      <Filter>Pliki nagłówkowe\Surowce</Filter>
+    </ClInclude>
+    <ClInclude Include="Building.h">
+      <Filter>Pliki nagłówkowe\Miejsca</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Pliki nagłówkowe\Zwierzaki</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock.h">
+      <Filter>Pliki nagłówkowe\Surowce</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoenixFeatherAlchemist.h">
+      <Filter>Pliki nagłówkowe\Miejsca</Filter>
+    </ClInclude>
+    <ClInclude Include="PerytonFeatherSpecialist.h">
+      <Filter>Pliki nagłówkowe\Miejsca</Filter>
+    </ClInclude>
+    <ClInclude Include="Predator.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjektSemestr4.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Dragon.cpp">
+      <Filter>Pliki źródłowe\Zwierzaki</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonScaleForge.cpp">
+      <Filter>Pliki źródłowe\Miejsca</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonScale.cpp">
+      <Filter>Pliki źródłowe\Surowce</Filter>
+    </ClCompile>
+    <ClCompile Include="Phoenix.cpp">
+      <Filter>Pliki źródłowe\Zwierzaki</Filter>
+    </ClCompile>
+    <ClCompile Include="Peryton.cpp">
+      <Filter>Pliki źródłowe\Zwierzaki</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoenixFeather.cpp">
+      <Filter>Pliki źródłowe\Surowce</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Bar.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="All_things.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Animal.cpp">
+      <Filter>Pliki źródłowe\Zwierzaki</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopB.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoenixFeatherAlchemist.cpp">
+      <Filter>Pliki źródłowe\Miejsca</Filter>
+    </ClCompile>
+    <ClCompile Include="PerytonFeather.cpp">
+      <Filter>Pliki źródłowe\Surowce</Filter>
+    </ClCompile>
+    <ClCompile Include="Building.cpp">
+      <Filter>Pliki źródłowe\Miejsca</Filter>
+    </ClCompile>
+    <ClCompile Include="Stock.cpp">
+      <Filter>Pliki źródłowe\Surowce</Filter>
+    </ClCompile>
+    <ClCompile Include="Predator.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="PerytonFeatherSpecialist.cpp">
+      <Filter>Pliki źródłowe\Miejsca</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

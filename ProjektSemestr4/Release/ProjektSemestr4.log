@@ -1,0 +1,28 @@
+﻿  pch.cpp
+  All_things.cpp
+  Animal.cpp
+  Bar.cpp
+  Building.cpp
+  BuildingList.cpp
+  Dragon.cpp
+  DragonScale.cpp
+  DragonScaleForge.cpp
+  Game.cpp
+  Image.cpp
+  Menu.cpp
+  Peryton.cpp
+  Phoenix.cpp
+  PhoenixFeather.cpp
+  Program.cpp
+  ProjektSemestr4.cpp
+  Shop.cpp
+  ShopB.cpp
+  Stock.cpp
+  StockList.cpp
+All_things.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp__al_load_ttf_font
+All_things.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp__al_destroy_font
+ProjektSemestr4.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp__al_show_native_message_box
+ProjektSemestr4.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp__al_init_font_addon
+ProjektSemestr4.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp__al_init_image_addon
+ProjektSemestr4.obj : error LNK2001: nierozpoznany symbol zewnętrzny __imp__al_init_ttf_addon
+C:\Users\Ame\source\repos\ProjektSemestr4\Release\ProjektSemestr4.exe : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 6
