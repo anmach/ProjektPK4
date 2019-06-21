@@ -5,8 +5,8 @@
 Shop::Shop()
 {
 	int distance = 100, firstX = 300;
-	int positionY = 60;
-	int winX = 240, winY = 100;
+	int positionY = 100;
+	int winX = 240, winY = 60;
 	int winW = 800, winH = 600;
 	int win2W = 300, win2H = 300;
 	int win2X = windowW / 2 - win2W / 2;
@@ -158,7 +158,7 @@ void Shop::checkForInteraction(ALL_things * all_things, Game* game)
 						game->setMoney(game->getMoney() + pricePeryton / 2);
 				}
 				else if (game->getMoney() >= pricePeryton) {
-					game->addPeryton(new Peryton());
+					game->addPhoenix(new Phoenix());
 					game->setMoney(game->getMoney() - pricePeryton);
 				}
 				return;
