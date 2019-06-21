@@ -11,8 +11,6 @@ Predator::Predator()
 Predator::~Predator()
 {
 	delete img;
-	if(prey!= nullptr)
-		delete prey;
 }
 
 Image * Predator::getImg()

@@ -19,8 +19,7 @@ class DragonScaleForge;
 class PhoenixFeatherAlchemist;
 class PerytonFeatherSpecialist;
 
-enum statesOfGame { shoppingAnimal, shoppingBuilding, wantMenu, justPlaying, endingGame };
-
+enum statesOfGame{PLAYing, ENDing, MENUing, SHOPPingB, SHOPPing};
 
 class Game
 {
@@ -63,10 +62,11 @@ private:
 
 	Predator* predator = nullptr;
 	bool givePredator = 0;
+	bool takePredator = 0;
 
 	bool refreshGame = 0;
 	bool deadLock = 1;
-	int gameState = justPlaying;
+	int gameState = PLAYing;
 	bool wonGame = 0;
 
 public:

@@ -40,7 +40,7 @@ void Menu::checkForInteraction(ALL_things * all_things, Game * game)
 		if (all_things->getMouseY() > returnButton->getY() && all_things->getMouseY() < returnButton->getY() + returnButton->getH()) {
 			if (all_things->getMouseX() > returnButton->getX() && all_things->getMouseX() < returnButton->getX() + returnButton->getW()) {
 				quit = 1;
-				game->setGameState(justPlaying);
+				game->setGameState(PLAYing);
 				game->setDeadLock(1);
 				return;
 			}
@@ -49,7 +49,7 @@ void Menu::checkForInteraction(ALL_things * all_things, Game * game)
 		if (all_things->getMouseY() > newGameButton->getY() && all_things->getMouseY() < newGameButton->getY() + newGameButton->getH()) {
 			if (all_things->getMouseX() > newGameButton->getX() && all_things->getMouseX() < newGameButton->getX() + newGameButton->getW()) {
 				game->doRefreshGame();
-				game->setGameState(endingGame);
+				game->setGameState(ENDing);
 				game->setDeadLock(0);
 				quit = 1;
 				return;
@@ -58,7 +58,7 @@ void Menu::checkForInteraction(ALL_things * all_things, Game * game)
 
 		if (all_things->getMouseY() > quitButton->getY() && all_things->getMouseY() < quitButton->getY() + quitButton->getH()) {
 			if (all_things->getMouseX() > quitButton->getX() && all_things->getMouseX() < quitButton->getX() + quitButton->getW()) {
-				game->setGameState(endingGame);
+				game->setGameState(ENDing);
 				game->setDeadLock(0);
 				quit = 1;
 				return;

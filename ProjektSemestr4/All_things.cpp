@@ -47,15 +47,15 @@ ALLEGRO_MOUSE_STATE ALL_things::getMouseState()
 }
 int ALL_things::getMouseX()
 {
-	return mouseState.x;
+	return events.mouse.x;
 }
 int ALL_things::getMouseY()
 {
-	return mouseState.y;
+	return events.mouse.y;
 }
 int ALL_things::getMouseButtons()
 {
-	return mouseState.buttons;
+	return events.mouse.button;
 }
 ALLEGRO_EVENT_TYPE ALL_things::getEventType()
 {

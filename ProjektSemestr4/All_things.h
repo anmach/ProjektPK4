@@ -10,6 +10,7 @@ private:
 	ALLEGRO_FONT *fontText;
 	ALLEGRO_MOUSE_STATE mouseState; //utworzenie struktury do otczytu stanu myszki
 	ALLEGRO_EVENT_QUEUE* eventQueue;
+
 	ALLEGRO_EVENT events;
 public:
 	ALL_things();

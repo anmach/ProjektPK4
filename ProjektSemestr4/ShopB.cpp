@@ -6,12 +6,12 @@ ShopB::ShopB()
 	int Bx = 260, By = 120;
 	int lx = 20;
 
-	int winX = 240, winY = 100;
+	int winX = 240, winY = 60;
 	int winH = 600, winW = 800;
 	int crossWH = 30;
 
 	win = new Image("Obrazki/Window.jpg", winX, winY, winH, winW);
-	cross = new Image(crossImageString, winX+winW, winY, crossWH, crossWH);
+	cross = new Image(crossImageString, winX+winW-crossWH, winY, crossWH, crossWH);
 
 	dSF = new Image(dragonScaleForgeImageString, Bx, By, buildingH, buildingW);
 	pFA = new Image(phoenixFeatherAlchemistImageString, Bx + lx +buildingW, By, buildingH, buildingW);

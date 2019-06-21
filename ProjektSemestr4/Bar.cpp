@@ -65,6 +65,7 @@ void Bar::checkForInteraction(ALL_things * all_things, Game * game)
 			if (game->getMoney() >= 50) {
 				game->setMoney(game->getMoney() - 50);
 				game->setFood(game->getFood() + 20);
+				game->setGivePredator(1);
 			}
 			return;
 		}
@@ -75,7 +76,7 @@ void Bar::checkForInteraction(ALL_things * all_things, Game * game)
 	{
 		if (all_things->getMouseX() > shopButton->getX() && all_things->getMouseX() < shopButton->getX() + shopButton->getW())
 		{
-			game->setGameState(shoppingAnimal);
+			game->setGameState(SHOPPing);
 			game->setDeadLock(0);
 			return;
 		}
@@ -86,7 +87,7 @@ void Bar::checkForInteraction(ALL_things * all_things, Game * game)
 	{
 		if (all_things->getMouseX() > menuButton->getX() && all_things->getMouseX() < menuButton->getX() + menuButton->getW())
 		{
-			game->setGameState(wantMenu);
+			game->setGameState(MENUing);
 			game->setDeadLock(0);
 		}
 	}

@@ -5,7 +5,7 @@
 Shop::Shop()
 {
 	int distance = 100, firstX = 300;
-	int positionY = 150;
+	int positionY = 60;
 	int winX = 240, winY = 100;
 	int winW = 800, winH = 600;
 	int win2W = 300, win2H = 300;

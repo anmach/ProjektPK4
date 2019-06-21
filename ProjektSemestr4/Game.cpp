@@ -403,7 +403,7 @@ void Game::gameLoop()
 	std::thread t1;
 	std::thread t2;
 
-	while(gameState == justPlaying){
+	while(gameState == PLAYing){
 		while ((actualTime - lastTime) < 300)
 			actualTime = clock();
 
@@ -411,9 +411,9 @@ void Game::gameLoop()
 
 		all_things->drawBackground(background);
 		showAnimal();
-		showBuildings();
 		showStock();
 		showPredator();
+		showBuildings();
 		bar->showBar(all_things, this);
 		all_things->refreshDisplay();
 
@@ -426,27 +426,24 @@ void Game::gameLoop()
 		if (!deadLock) {
 			switch (gameState)
 			{
-			case shoppingAnimal:
+			case SHOPPing:
 				shopAnimal->shopLoop(all_things, this);
 				deadLock = 1;
-				gameState = justPlaying;
+				gameState = PLAYing;
 				break;
-			case shoppingBuilding:
+			case SHOPPingB:
 				shopBuild->shopLoop(all_things, this, chosenPlace);
 				deadLock = 1;
-				gameState = justPlaying;
+				gameState = PLAYing;
+				chosenPlace = nullptr;
 				break;
-			case wantMenu:
+			case MENUing:
 				menu->menuLoop(all_things, this);
+				break;
 				break;
 			default:
 				break;
 			}
-		}
-
-		if (level->levelPassed()) {
-			wonGame = 1;
-			gameState = endingGame;
 		}
 	}
 }
@@ -456,6 +453,11 @@ void Game::gameLoop_actions()
 	animalActions();
 	buildingActions();
 	predatorActions();
+
+	if (level->levelPassed()) {
+		wonGame = 1;
+		gameState = ENDing;
+	}
 }
 
 void Game::animalActions()
@@ -571,8 +573,6 @@ void Game::checkForInteraction()
 {
 	while (all_things->nextEvent())
 	{
-		all_things->refreshMouseState();
-
 		if (all_things->getMouseButtons() == 1) {
 			//naciœniêty lewy klawisz myszy
 
@@ -666,7 +666,7 @@ void Game::checkForInteraction()
 				{
 					if (all_things->getMouseX() > (*itFreePla)->getX() && all_things->getMouseX() < (*itFreePla)->getX() + (*itFreePla)->getW())
 					{
-						gameState = shoppingBuilding;
+						gameState = SHOPPingB;
 						deadLock = 0;
 						chosenPlace = *itFreePla;
 						return;
@@ -679,8 +679,7 @@ void Game::checkForInteraction()
 				{
 					if (all_things->getMouseX() > predator->getImg()->getX() && all_things->getMouseX() < predator->getImg()->getX() + predator->getImg()->getW())
 					{
-						if (!(rand() % 3))
-							killPredator();
+						killPredator();
 						return;
 					}
 				}
